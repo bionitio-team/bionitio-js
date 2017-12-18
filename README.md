@@ -156,11 +156,6 @@ Bionitio returns the following exit status values:
 
 # Testing
 
-```
-% cd bionitio/python/bionitio
-% python -m unittest -v bionitio_test
-```
-
 A set of sample test input files is provided in the `test_data` folder.
 ```
 % bionitio-js two_sequence.fasta 
