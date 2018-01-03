@@ -11,5 +11,6 @@ echo 'JS install'
   nvm install stable
   nvm use stable
   npm install
+  npm install -g mocha
   ln -sf $(which node) $OLD_NODE # hack to get past travis
 )
