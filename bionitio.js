@@ -25,9 +25,6 @@ opts
   .option('-l, --log <LOG_FILE>', 'record program progress in LOG_FILE')
   .parse(process.argv)
 
-// Default to reading stdin if there are no files specified
-if (opts.args.length === 0) { opts.args = ['/dev/stdin'] }
-
 // Setup logging
 var logger = new (winston.Logger)()
 logger.info('Command line')
