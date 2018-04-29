@@ -10,6 +10,16 @@ This program is released as open source software under the terms of [MIT License
 
 # Installing
 
+Clone this repository: 
+```
+git clone https://github.com/bionitio-team/bionitio-js
+```
+
+Move into the repository directory:
+```
+cd bionitio-js
+```
+
 1. Ensure you have node installed : [https://nodejs.org/en/]
 2. `npm install`
 
