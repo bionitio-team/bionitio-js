@@ -2,7 +2,7 @@
   "name": "bionitio",
   "version": "0.1.0",
   "description": "Print fasta stats",
-  "main": "bionitio.js",
+  "main": "bionitio",
   "dependencies": {
     "through2": "~0.6.0",
     "split": "^0.3.0",
@@ -26,7 +26,7 @@
     "test": "standard && mocha"
   },
   "bin": {
-    "bionitio": "./bionitio.js"
+    "bionitio": "./bionitio"
   },
   "repository": {
     "type": "git",
