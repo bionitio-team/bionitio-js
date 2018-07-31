@@ -1,7 +1,16 @@
 #!/usr/bin/env node
 
-/**
- */
+/*
+Module      : bionitio.js 
+Description : The main entry point for the program.
+Copyright   : (c) BIONITIO_AUTHOR, BIONITIO_DATE 
+License     : BIONITIO_LICENSE 
+Maintainer  : BIONITIO_EMAIL 
+Portability : POSIX
+
+The program reads one or more input FASTA files. For each file it computes a
+variety of statistics, and then prints a summary of the statistics as output.
+*/
 
 var opts = require('commander')
 var winston = require('winston')
