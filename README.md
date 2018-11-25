@@ -25,6 +25,11 @@ $ cd bionitio-js
 1. Ensure you have node installed : [https://nodejs.org/en/]
 2. `npm install`
 
+Run the program with the command:
+```
+./bionitio
+```
+
 # General behaviour
 
 Bionitio accepts zero or more FASTA filenames on the command line. If zero filenames are specified it reads a single FASTA file from the standard input device (stdin). Otherwise it reads each named FASTA file in the order specified on the command line. Bionitio reads each input FASTA file, computes various statistics about the contents of the file, and then displays a tab-delimited summary of the statistics as output. Each input file produces at most one output line of statistics. Each line of output is prefixed by the input filename or by the text "`stdin`" if the standard input device was used.
@@ -48,7 +53,7 @@ If there are zero sequences counted in a file, the values of MIN, AVERAGE and MA
 Bionitio can display usage information on the command line via the `-h` or `--help` argument:
 
 ```
-% bionitio -h
+$ bionitio -h
 usage: bionitio [-h] [--minlen N] [--version] [--log LOG_FILE]
                   [FASTA_FILE [FASTA_FILE ...]]
 
@@ -128,7 +133,7 @@ $ bionitio --log bt.log file1.fasta file2.fasta
 ```
 % cat bt.log
 12/04/2016 19:14:47 program started
-12/04/2016 19:14:47 command line: /usr/local/bin/bionitio-js --log bt.log file1.fasta file2.fasta
+12/04/2016 19:14:47 command line: /usr/local/bin/bionitio --log bt.log file1.fasta file2.fasta
 12/04/2016 19:14:47 Processing FASTA file from file1.fasta
 12/04/2016 19:14:47 Processing FASTA file from file2.fasta
 ```
@@ -153,10 +158,6 @@ Bionitio returns the following exit status values:
 * 2: A command line error occurred. This can happen if the user specifies an incorrect command line argument. In this circumstance bionitio will also print a usage message to the standard error device (stderr).
 * 3: Input FASTA file is invalid. This can occur if bionitio can read an input file but the file format is invalid. 
 
-
-# Error handling
-
-XXX FIXME
 
 # Testing
 
