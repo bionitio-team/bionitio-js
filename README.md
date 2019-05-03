@@ -163,7 +163,6 @@ Bionitio returns the following exit status values:
 
 ## Unit tests
 
-XXX fixme
 
 ## Test suite
 
