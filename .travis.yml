@@ -7,9 +7,5 @@ before_install:
   - docker build -t bionitio-js .
 
 script:
-  # - ./functional_tests/bionitio-test.sh -p $TRAVIS_BUILD_DIR/bionitio -d functional_tests/test_data
-  # - ./.travis/unit-test.sh
-
-script:
   - docker run --entrypoint /bionitio/.travis/unit-test.sh bionitio-js
   - docker run --entrypoint /bionitio/functional_tests/bionitio-test.sh bionitio-js -p bionitio -d /bionitio/functional_tests/test_data -v
