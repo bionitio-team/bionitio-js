@@ -160,6 +160,10 @@ Bionitio returns the following exit status values:
 
 ## Unit tests
 
+You can run the unit tests for bionitio with the following command:
+```
+mocha test/test.js
+```
 
 ## Test suite
 
